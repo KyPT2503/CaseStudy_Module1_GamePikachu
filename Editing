@@ -1,0 +1,3 @@
+1. New Game chạy chưa hiệu quả, khi mà new game thì mảng để check chưa set lại được nên bị lỗi, chỉ cần ăn 1 cái là win luôn
+2. Thuật toán tìm đường chưa tối ưu, ý tưởng
+    2.1 Chạy thêm 1 phương thức khi move tracer, phương thức sẽ kiểm tra xem nên đi hướng nào để từ A dễ đi đến B nhất
