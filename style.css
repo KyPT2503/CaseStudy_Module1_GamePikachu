@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 html {
+    background-color:black;;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -82,4 +83,18 @@ img {
     align-items: center;
     color:greenyellow;
     border-radius: 5px;
+}
+#description {
+    width:1100px;
+    height:700px;
+    border:1px solid lawngreen;
+    position:absolute;
+    top:20px;
+    left:100px;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:greenyellow;
+    background-color:black;
 }
