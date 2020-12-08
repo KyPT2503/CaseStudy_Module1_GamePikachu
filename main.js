@@ -46,7 +46,7 @@ function creatNewGame()
     {
         cols=16;
         rows=7;
-        timeRemain=181;
+        timeRemain=241;
         imgAmount=cols*rows/4;
     }
     sourceImg=document.getElementById('image').value;
@@ -59,6 +59,20 @@ function creatNewGame()
             for(let j=0;j<cols;j++)
             {
                 imgList.push(`${id}.jpg`)
+                id+=1;
+                if(id==imgAmount) id=0;
+            }
+        }
+    }
+    function setImgListNew()
+    {
+        imgList=[];
+        let id=0;
+        for(let i=0;i<rows;i++)
+        {
+            for(let j=0;j<cols;j++)
+            {
+                imgList.push(`${id}.png`)
                 id+=1;
                 if(id==imgAmount) id=0;
             }
@@ -93,6 +107,7 @@ function creatNewGame()
         }
     }
     setImgList();
+    if(sourceImg==`new_pikachu`) setImgListNew();
     mixImgList();
     setArrayToCheck();
     let content=`<table id="table">`
@@ -441,7 +456,7 @@ function creatOriginInterface()
 {
     let audio_=new Audio('https://audio-previews.elements.envatousercontent.com/files/136199140/preview.mp3');
     audio_.play();
-    let content=`<div><select name="lever" id="lever"><option value="0">Easy</option><option value="1">Medium</option><option value="2">Hard</option></select><select name="image" id="image"><option value="pikachu">Pikachu</option><option value="girls">Girls</option><option value="anime_girls">AnimeGirls</option></select><button onclick="creatNewGame()">Play</button></div>`;
+    let content=`<div><select name="lever" id="lever"><option value="0">Easy</option><option value="1">Medium</option><option value="2">Hard</option></select><select name="image" id="image"><option value="pikachu">Pikachu</option><option value="new_pikachu">New Pikachu</option><option value="girls">Girls</option><option value="anime_girls">AnimeGirls</option></select><button onclick="creatNewGame()">Play</button></div>`;
     document.getElementById('main').innerHTML=content;
     document.getElementById('description').style.display=`none`;
     document.getElementById('main').style.display=`flex`;
@@ -542,4 +557,14 @@ function betterDirection(A,B)
     /*------------------------------------------------------------------------------------*/
     return dir; // do not need but to be careful
 }
+let indexBackgroundImg=1;
+let backgroundImgList=["background_image/background_image00.jpg","background_image/background_image01.png","background_image/background_image02.jpg","background_image/background_image03.jpg","background_image/background_image04.jpg","background_image/background_image05.jpg","background_image/background_image06.jpg","background_image/background_image07.png","background_image/background_image08.jpg","background_image/background_image09.jpg"];
+function changeBackgroundImg()
+{
+    let audio=new Audio('https://audio-previews.elements.envatousercontent.com/files/136199140/preview.mp3');
+    audio.play();
+    document.getElementById('game-container').style.backgroundImage=`url(${backgroundImgList[indexBackgroundImg++]})`;
+    if(indexBackgroundImg==backgroundImgList.length) indexBackgroundImg=0;
+}
+
 

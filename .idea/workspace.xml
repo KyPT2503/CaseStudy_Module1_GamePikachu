@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e8f7166e-328e-46c8-88f2-15edf65765e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Editing" beforeDir="false" afterPath="$PROJECT_DIR$/Editing" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -35,6 +34,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/image" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -54,7 +54,8 @@
       <workItem from="1607061643935" duration="8064000" />
       <workItem from="1607086367269" duration="9982000" />
       <workItem from="1607140245457" duration="7248000" />
-      <workItem from="1607221639036" duration="21331000" />
+      <workItem from="1607221639036" duration="21583000" />
+      <workItem from="1607338646850" duration="3844000" />
     </task>
     <servers />
   </component>

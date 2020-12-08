@@ -11,9 +11,10 @@ html {
     position:relative;
     width:1300px;
     height:840px;
-    background-image:url("image/background_image01.png");
+    background-image:url("background_image/background_image00.jpg");
     background-size:cover;
     background-repeat: no-repeat;
+    margin-top:100px;
 }
 #main {
     width:1100px;
@@ -63,7 +64,7 @@ button {
 }
 select {
     background-color:orangered;
-    width:120px;
+    width:150px;
     height:70px;
     color:greenyellow;
     font-size:20px;
